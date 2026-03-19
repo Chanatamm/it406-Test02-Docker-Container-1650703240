@@ -76,7 +76,7 @@ volumes:
 
 configs:
   my-nginx-conf:
-    file: ./it464-Test02-Docker-Container-1/my-nginx.conf # (5.2) เติมชื่อโฟลเดอร์ที่เก็บไฟล์คอนฟิก
+    file: ./scripts/my-nginx.conf # (5.2) เติมชื่อโฟลเดอร์ที่เก็บไฟล์คอนฟิก
 
 secrets:
   db_root_pass:
