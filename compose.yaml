@@ -14,7 +14,7 @@ services:
     networks:
       - backend-zone  # (1.6) ต้องเชื่อมกับวงปิดสำหรับ DB
     volumes:
-      - db-volume:/var/lib/mysql  # (1.7) เติมชื่อ Named Volume ที่ประกาศด้านล่าง [5.1]
+      - db-volume:/var/lib/mysql # (1.7) เติมชื่อ Named Volume ที่ประกาศด้านล่าง [5.1]
     secrets:
       - db_root_pass # (1.8) เติมชื่อ Secret ที่ประกาศด้านล่าง [10]
 
@@ -76,7 +76,7 @@ volumes:
 
 configs:
   my-nginx-conf:
-    file: ./shift/my-nginx.conf # (5.2) เติมชื่อโฟลเดอร์ที่เก็บไฟล์คอนฟิก
+    file: ./it464-Test02-Docker-Container-1/my-nginx.conf # (5.2) เติมชื่อโฟลเดอร์ที่เก็บไฟล์คอนฟิก
 
 secrets:
   db_root_pass:
